@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+}
+
+@media (max-width: 990px) {
+  .app {
+    flex-direction: column;
+  }
+}
+
+body {
+  background-color: #f5f6fa;
+}
+
+.app {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.app__header {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.app__header > h1 {
+  color: #1a0202;
+  font-size: 3rem;
+}
+
+.app__stats {
+  display: flex;
+  justify-content: space-between;
+  /* padding: 20px; */
+}
+
+.app__left {
+  flex: 0.9;
+}
+
+/* to make graph of complete height this is the complete set of code  */
+.app__right {
+  display: flex;
+  flex-direction: column;
+}
+
+.app__right .MuiCardContent-root {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.app_graph {
+  flex-grow: 1;
+}
+
+/* style ends here */
+.app__dropdown {
+  border-radius: 10px solid rgb(15, 2, 2);
+}
+
+.graph-style {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.app__information > h3 {
+  color: #6a5d5d;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.app__information > h3:last-of-type {
+  margin-top: 1rem;
+}
