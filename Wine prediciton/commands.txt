@@ -1,0 +1,25 @@
+**Installation
+	sudo yum update -y
+	sudo nano /etc/sudoers
+	/*find below line with 
+	Defaults    secure_path = /sbin:/bin:/usr/sbin:/usr/bin
+	Just add /usr/local/bin to this PATH
+	*/
+	sudo pip install findspark
+	sudo pip install pyspark
+	sudo pip install prettytable
+	python train.py
+	python test.py
+
+**Docker Commands
+	sudo yum install -y docker
+	sudo service docker start
+	sudo docker login -u richashrivastava
+	sudo docker build . -t richashrivastava/winequalityprediction
+	sudo docker run -t richashrivastava/winequalityprediction
+	sudo docker push richashrivastava/winequalityprediction
+	sudo docker pull richashrivastava/winequalityprediction
+	sudo docker run richashrivastava/winequalityprediction
+		
+**To remove image in docker
+	sudo docker rmi -f  image imageID
